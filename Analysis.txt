@@ -1,0 +1,12 @@
+when startprice and min price both are same then there hould be conditional check for this.
+
+
+44: during this while loop progrma will stuck in loop till bidding ends or some bid is made,but bit canot be made since that while loop of start auction is running and two concurrent execution cannot occur in EVM.so program will stuck.Logic of start auction and bid is correct.
+
+and due to while loop it may happen that gas limit exceeds. (bidduration is high)
+
+resolution1:
+	using Ethereum alarm clock - we can set bidduration time check based no of blocks created e.g duration=5blocks 
+resolution2: 
+	we can check use flag which will indicate that if .
+
